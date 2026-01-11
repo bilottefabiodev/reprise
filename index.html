@@ -31,28 +31,31 @@
       'https://connect.facebook.net/en_US/fbevents.js');
       fbq('init', '185994519269249');
       fbq('track', 'PageView');
-      fbq('track', 'ViewContent'); // Evento solicitado para a reprise
+      fbq('track', 'ViewContent', {
+        content_name: 'Reprise Imersão LHT 2026',
+        content_category: 'Lançamento High Ticket'
+      });
     </script>
     <noscript>
       <img height="1" width="1" style="display:none" 
            src="https://www.facebook.com/tr?id=185994519269249&ev=PageView&noscript=1"/>
     </noscript>
+
     <style>
-        body { background-color: #0A0A0A; color: white; }
+        body { background-color: #0A0A0A; color: white; margin: 0; }
         .video-container {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
+            box-shadow: 0 0 50px rgba(209, 84, 73, 0.2);
+            border-radius: 24px;
         }
         .video-container iframe {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 24px;
+            top: 0; left: 0; width: 100%; height: 100%;
             border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 24px;
         }
         .gradient-text {
             background: linear-gradient(to right, #D15449, #E88B4E, #F2B263);
@@ -64,18 +67,18 @@
 <body class="font-sans antialiased">
 
     <main class="min-h-screen flex flex-col items-center py-12 px-6">
-        <div class="mb-12 text-center">
-            <p class="text-[10px] font-bold uppercase tracking-[0.4em] text-brand-middle mb-2">Reprise Exclusiva</p>
-            <h2 class="text-xl md:text-2xl font-black uppercase tracking-tight">
-                Lançamento <span class="gradient-text">High Ticket 2026</span>
+        <div class="mb-10 text-center">
+            <p class="text-[10px] font-bold uppercase tracking-[0.4em] text-[#E88B4E] mb-2">Acesso à Reprise</p>
+            <h2 class="text-xl md:text-2xl font-black uppercase tracking-tight text-white">
+                Imersão Lançamento <span class="gradient-text">High Ticket 2026</span>
             </h2>
         </div>
 
-        <div class="w-full max-w-5xl mb-12 shadow-2xl">
+        <div class="w-full max-w-5xl mb-12">
             <div class="video-container">
                 <iframe 
-                    src="https://youtu.be/YjWQkqiNz4c" 
-                    title="Reprise Imersão LHT" 
+                    src="https://www.youtube.com/embed/YjWQkqiNz4c?rel=0&modestbranding=1" 
+                    title="Reprise: O modelo mais lucrativo para 2026" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
@@ -85,26 +88,28 @@
 
         <div class="max-w-3xl text-center space-y-8">
             <h1 class="text-3xl md:text-5xl font-black tracking-tighter uppercase leading-tight">
-                A estratégia completa para vender <br />
-                <span class="gradient-text">High Ticket em 2026</span> está disponível por tempo limitado.
+                Instale a soberania digital <br />
+                <span class="gradient-text">no seu negócio agora.</span>
             </h1>
             
-            <p class="text-gray-400 text-lg md:text-xl font-medium">
-                Não assista apenas como conteúdo. Assista como instalação de sistema. 
-                Sua vaga para a imersão principal ainda pode ser garantida no link abaixo.
+            <p class="text-gray-400 text-lg md:text-xl font-medium leading-relaxed">
+                Nesta aula, Tatiana Marx revela como faturar múltiplos 6 e 7 dígitos com rotina real de 4h por dia e sem equipe dedicada. 
+                O ingresso para a imersão prática de 17 de Janeiro ainda está disponível.
             </p>
 
             <div class="pt-6">
                 <a href="https://chk.eduzz.com/797VE1RVWE" 
-                   class="inline-flex items-center justify-center w-full max-w-md bg-gradient-to-r from-brand-start via-brand-middle to-brand-end py-6 rounded-2xl text-white font-black text-xl uppercase tracking-widest transition-all duration-300 transform hover:scale-[1.03] shadow-[0_20px_50px_rgba(209,84,73,0.3)]">
+                   class="inline-flex items-center justify-center w-full max-w-md bg-gradient-to-r from-[#D15449] via-[#E88B4E] to-[#F2B263] py-6 rounded-2xl text-white font-black text-xl uppercase tracking-widest transition-all duration-300 transform hover:scale-[1.03] shadow-[0_20px_50px_rgba(209,84,73,0.3)]">
                     GARANTIR MEU INGRESSO
                 </a>
-                <p class="mt-4 text-xs text-gray-500 font-bold uppercase tracking-widest">Lote 01 Disponível por R$ 47,00</p>
+                <p class="mt-4 text-[10px] text-gray-500 font-bold uppercase tracking-widest">
+                    Lote 01: R$ 47,00 | Evento ao vivo em 17/01
+                </p>
             </div>
         </div>
 
-        <footer class="mt-24 text-gray-600 text-[10px] uppercase tracking-widest font-bold">
-            © 2026 Tatiana Marx | Todos os direitos reservados
+        <footer class="mt-20 text-gray-600 text-[9px] uppercase tracking-widest font-bold">
+            © 2026 Tatiana Marx | Inteligência Estratégica
         </footer>
     </main>
 
